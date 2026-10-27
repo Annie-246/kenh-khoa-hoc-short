@@ -73,6 +73,25 @@ Một video 3 phút mất khoảng 20–30 phút (tìm footage + render).
 
 Key và nhạc riêng nằm trong `~/.kenh-khoa-hoc-short/` nên không mất khi cập nhật.
 
+## 6. Muốn chỉnh theo ý mình? Clone ra bản riêng
+
+**Repo này không nhận chỉnh sửa từ người khác:** không nhận Pull Request, không nhận yêu cầu đổi style.
+Plugin được giữ đúng phong cách gốc của kênh.
+
+Cũng đừng sửa thẳng file trong plugin đã cài, vì lần cập nhật sau sẽ ghi đè mất.
+Muốn đổi giọng, font, màu, bố cục… thì chép skill ra thành **bản riêng của bạn**, đặt tên khác.
+Dán prompt này vào Claude Code:
+
+```
+Clone repo https://github.com/Annie-246/kenh-khoa-hoc-short về một thư mục tạm,
+chép thư mục skills/kenh-khoa-hoc-short sang ~/.claude/skills/kenh-khoa-hoc-short-cua-toi,
+đổi dòng "name:" trong SKILL.md thành kenh-khoa-hoc-short-cua-toi,
+rồi gỡ plugin gốc (claude plugin uninstall kenh-khoa-hoc-short) để hai bản không chồng nhau.
+Sau đó giúp mình sửa bản riêng này theo ý: <mô tả thay đổi bạn muốn>.
+```
+
+Từ đó gọi `/kenh-khoa-hoc-short-cua-toi`. Bản riêng sẽ không tự cập nhật theo plugin gốc nữa.
+
 ## Bản quyền
 
 - Code: MIT. Font Nunito: SIL OFL 1.1.
