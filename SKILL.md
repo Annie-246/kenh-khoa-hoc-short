@@ -6,7 +6,7 @@ description: Dựng video dọc 9:16 cho kênh khoa học kể chuyện — ngư
 # Kênh khoa học short
 
 `SK` = thư mục gốc của skill này (đường dẫn ở dòng "Base directory for this skill" khi skill được nạp).
-`CONF` = `~/.kenh-khoa-hoc-short/` — thư mục riêng của người dùng, giữ key và nhạc, không mất khi update plugin:
+`CONF` = `~/.kenh-khoa-hoc-short/` — thư mục riêng của người dùng, giữ key và nhạc, nằm ngoài thư mục skill:
 - `CONF/.env` — một dòng `ELEVENLABS_API_KEY=sk_...`
 - `CONF/music/` — nhạc nền riêng (tuỳ chọn; file mp3/wav/m4a đầu tiên được dùng). Không có thì dùng nhạc mặc định `SK/assets/music/first_snow_piano.mp3`
 

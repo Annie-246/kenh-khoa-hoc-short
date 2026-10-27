@@ -3,7 +3,7 @@
 # Usage (from the project folder): bash <skill>/scripts/finish.sh out/<name>.mp4 [music.mp3]
 set -e
 SKILL="$(cd "$(dirname "$0")/.." && pwd)"
-CONF="$HOME/.kenh-khoa-hoc-short"   # user folder: .env + music/ (survives plugin updates)
+CONF="$HOME/.kenh-khoa-hoc-short"   # user folder: .env + music/ (outside the skill folder)
 OUT="${1:-out/final.mp4}"
 MUSIC="${2:-$(ls "$CONF"/music/*.mp3 "$CONF"/music/*.wav "$CONF"/music/*.m4a "$SKILL"/assets/music/*.mp3 2>/dev/null | head -1)}"
 DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 build/video.mp4)

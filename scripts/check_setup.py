@@ -30,7 +30,7 @@ key = os.path.exists(KEY_FILE) and "ELEVENLABS_API_KEY=" in open(KEY_FILE, encod
 ok(f"ElevenLabs key ở {KEY_FILE}", key,
    f"Tạo file {KEY_FILE} (tạo cả thư mục) với 1 dòng: ELEVENLABS_API_KEY=sk_... (lấy key ở elevenlabs.io > Developers > API Keys)")
 music = [f for f in os.listdir(MUSIC_DIR) if f.lower().endswith((".mp3", ".wav", ".m4a"))] if os.path.isdir(MUSIC_DIR) else []
-print("  [OK]   Nhạc nền: " + (f"của bạn trong {MUSIC_DIR}" if music else "mặc định của plugin (first_snow_piano.mp3)"))
+print("  [OK]   Nhạc nền: " + (f"của bạn trong {MUSIC_DIR}" if music else "mặc định của skill (first_snow_piano.mp3)"))
 
 if missing:
     print("\nCần bổ sung:")
