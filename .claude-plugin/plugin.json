@@ -1,0 +1,10 @@
+{
+  "name": "kenh-khoa-hoc-short",
+  "version": "1.0.0",
+  "description": "Dựng video dọc 9:16 kiểu kênh khoa học kể chuyện: text → giọng ElevenLabs → footage archive.org + hình bài báo tô vàng → nền đen grain, hook chữ cắt tay, caption chạy theo lời, sao lấp lánh.",
+  "author": { "name": "Annie-246" },
+  "homepage": "https://github.com/Annie-246/kenh-khoa-hoc-short",
+  "repository": "https://github.com/Annie-246/kenh-khoa-hoc-short",
+  "license": "MIT",
+  "keywords": ["video", "shorts", "tiktok", "elevenlabs", "vietnamese", "science"]
+}
